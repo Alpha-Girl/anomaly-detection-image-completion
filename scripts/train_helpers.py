@@ -38,6 +38,7 @@ class TensorBoardImages(Callback):
         self.imgss = imgss
         self.vis_every = vis_every
         self.writer = tf.summary.FileWriter(logdir)
+        # self.writer = tf.summary.create_file_writer(logdir)
 
     def on_epoch_end(self, epoch, logs={}):
         if epoch % self.vis_every == 0:

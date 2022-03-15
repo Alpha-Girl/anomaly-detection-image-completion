@@ -1,6 +1,6 @@
 import numpy as np
 
-from keras.utils import Sequence
+from tensorflow.keras.utils import Sequence
 
 
 def create_center_mask(patch_size, center_size):
